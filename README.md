@@ -264,3 +264,14 @@ It's easy to extend DBCart. You can extend base DBCart model and add your own me
     ```
 
 You can also follow the above steps and create your own `CartLine` model by extending `NabeelAlalmai\DBcart\Models\CartLine`. Be sure to update `config/cart.php` to reflect your changes.
+
+## Disclaimer
+I was using <a href="https://github.com/hassansin/dbcart" target="_blank">`dbcart by Hassansin`</a> but it doesn't support Laravel 6. So, I re-wrote the package to support Laravel > 5.5. If you use dbcart by Hassansin you can use this package and it should work with no conflicts.  
+
+## Support
+
+Reach out to me at one of the following places!
+
+- Twitter at <a href="http://twitter.com/nabeel_alalmai" target="_blank">`Nabeel Al Almai - نبيل الالمعي`</a>
+
+---
