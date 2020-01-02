@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCartLinesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('cart_lines', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('cart_id');
+            $table->integer('product_id')->unsigned();
+            $table->integer('quantity')->unsigned();
+            $table->decimal('unit_price');
+
+            $table->timestamps();
+            $table->foreign('cart_id')->references('id')
+                ->on('cart')
+                ->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('cart_lines');
+    }
+}
