@@ -15,15 +15,18 @@ Shopping Cart library for Laravel > 5.5 and Laravel 6 that uses database instead
 * Multiple instances of cart
 * Schedule expired carts for deletion
 
+## Before installation
+if you already use <a href="https://github.com/hassansin/dbcart" target="_blank">`dbcart by Hassansin`</a>, please skip DB migrations
+and publishing configuration. This package is fully compatible. 
 ## Installation
 1. Install the package via composer:
     ``` bash
-    composer require nabeel-alalmai/dbcart-laravel
+    composer require nabeelalalmai/dbcart-laravel
     ```
 
     The package will automatically register itself.
 
-2. Publish database migrations:
+2. Publish database migrations(IF YOU USE dbcart:
 
     ```bash
     php artisan vendor:publish --provider="NabeelAlalmai\DBcart\CartServiceProvider" --tag="migrations"
