@@ -1,6 +1,6 @@
 {
     "name": "nabeelalalmai/dbcart-laravel",
-    "description": "Shopping Cart for Laravel > 5.5 and Laravel 6 that uses Database instead of Sessions.",
+    "description": "Shopping Cart for Laravel > 5.5 , Laravel 6 and Laravel 7 that uses Database instead of Sessions.",
     "keywords": [
         "Nabeel Al-Almai",
         "Shopping Cart",
@@ -20,7 +20,7 @@
 
     "require": {
         "php": "^7.2",
-        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0"
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
